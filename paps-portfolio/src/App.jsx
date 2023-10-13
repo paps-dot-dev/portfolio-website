@@ -15,8 +15,8 @@ function App() {
       <Router>
         <Layout dark={dark} toggleTheme={toggleTheme}>
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/code' element={<Code />} />
+            <Route path='/' element={<Home dark={dark} />} />
+            <Route path='/code' element={<Code dark={dark} />} />
           </Routes>
         </Layout>
       </Router>

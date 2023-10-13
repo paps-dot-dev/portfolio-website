@@ -7,6 +7,10 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 3s linear infinite',
       },
+      backgroundImage: {
+        darkHero: "url('./assets/darkbg.jpg')",
+        lightHero: "url('./assets/lightbg.jpg')",
+      },
     },
   },
   plugins: [],

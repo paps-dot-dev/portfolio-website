@@ -10,8 +10,8 @@ import { Link } from 'react-router-dom'
 
 function NavModal({ toggleNav }) {
   return (
-    <nav className='h-screen bg-rose-800 absolute top-0 overflow-y-scroll w-screen z-10'>
-      <FaMinus onClick={toggleNav} className='text-3xl m-2' />
+    <nav className='h-screen bg-lightHero bg-cover text-black absolute top-0 overflow-y-scroll w-screen z-10'>
+      <FaMinus onClick={toggleNav} className='text-3xl m-2 cursor-pointer' />
       <div>
         <div className='flex justify-between items-center mb-8 p-4'>
           <p className='font-light'>Shawn Papineau</p>

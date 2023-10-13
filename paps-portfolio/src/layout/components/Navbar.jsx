@@ -8,7 +8,7 @@ import {
 } from 'react-icons/fa'
 import Switcher from './Switcher'
 import NavModal from './NavModal'
-function Navbar({ toggleTheme }) {
+function Navbar({ toggleTheme, dark }) {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleNav = () => {
@@ -19,7 +19,9 @@ function Navbar({ toggleTheme }) {
       <nav className='flex flex-row justify-between items-center '>
         <FaReact
           onClick={toggleNav}
-          className='text-indigo-500 text-[4em] animate-spin-slow cursor-pointer'
+          className={`${
+            dark ? 'text-white' : 'text-indigo-600'
+          } text-[4em] animate-spin-slow cursor-pointer p-2`}
         />
         <div className='flex flex-row justify-between items-center text-3xl'>
           <a href='https://www.instagram.com/paps_audio' target='_blank'>
@@ -31,7 +33,7 @@ function Navbar({ toggleTheme }) {
             target='_blank'>
             <FaGithub />
           </a>
-          <Switcher toggleTheme={toggleTheme} />
+          <Switcher dark={dark} toggleTheme={toggleTheme} />
         </div>
       </nav>
       {isOpen && <NavModal toggleNav={toggleNav} />}
