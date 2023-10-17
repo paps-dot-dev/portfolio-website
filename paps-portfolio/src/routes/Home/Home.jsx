@@ -80,7 +80,6 @@ function Home({ dark }) {
           </div>
         </div>
       </div>
-      <h3>Swipe to see more</h3>
       <ProjectSwiper />
       <h3 className='font-bold text-6xl lg:text-8xl mt-32'>#FullyStacked</h3>
       <p className='p-4 lg:w-1/3 text-sm font-medium  mt-4 mb-2 rounded-lg m-auto bg-slate-400 bg-opacity-30 text-center '>
