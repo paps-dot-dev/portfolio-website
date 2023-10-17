@@ -1,15 +1,14 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import ProjectCard from './ProjectCard'
-import projects from '../../../projects'
 
 import 'swiper/css'
 import { FaAngleDoubleLeft } from 'react-icons/fa'
 
-function ProjectSwiper() {
+function ProjectSwiper({ projects }) {
   return (
     <>
-      <div className='flex items-center text-2xl mr-auto font-light px-8'>
+      <div className='flex items-center text-2xl mr-auto font-light px-8 pt-8'>
         <FaAngleDoubleLeft />
         <h3 className='mx-2'>Swipe To See More!</h3>
       </div>

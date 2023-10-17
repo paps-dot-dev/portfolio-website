@@ -23,6 +23,24 @@ const projects = [
     summary: 'Interesting information about this project',
     technologies: ['Vite.js', 'Material UI', 'React.js', 'Node.js'],
   },
+  {
+    id: 3,
+    name: 'CRM Application',
+    url: '',
+    githubURL: 'https://github.com/paps-dot-dev/pricing-by-postal-code',
+    image: '/project.jpg',
+    summary: 'Interesting information about this project',
+    technologies: ['Vite.js', 'Headless UI', 'Tailwind', 'React.js', 'Node.js'],
+  },
+  {
+    id: 4,
+    name: 'Enterprise Link Tree Application',
+    url: '',
+    githubURL: 'https://github.com/paps-dot-dev/pricing-by-postal-code',
+    image: '/project.jpg',
+    summary: 'Interesting information about this project',
+    technologies: ['Next.js', 'Tailwind', 'Node.js'],
+  },
 ]
 
 export default projects

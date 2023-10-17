@@ -1,5 +1,5 @@
 import React from 'react'
-import placeholder from '../../assets/placeholder.jpg'
+import headshot from '../../assets/headshot.jpeg'
 import ProjectSwiper from './components/ProjectSwiper'
 import {
   FaAngleDoubleLeft,
@@ -38,32 +38,46 @@ import {
   SiSololearn,
 } from 'react-icons/si'
 
-function Home({ dark }) {
+function Home({ dark, projects }) {
   return (
     <main className='flex flex-col justify-center items-center'>
       <div className='p-4 ring-1 ring-white rounded-full bg-slate-200 bg-opacity-50'>
-        <img className='rounded-full h-48 w-48' src={placeholder} />
+        <img className='rounded-full h-48 w-48' src={headshot} />
       </div>
       <div className='flex flex-col justify-between items-center mt-4'>
         <h1 className='font-semibold text-3xl'>Shawn "Paps" Papineau</h1>
         <div className='text-2xl flex justify-between items-center w-[250px] p-4'>
-          <a href='tel:586-601-5723'>
+          <a
+            href='tel:586-601-5723'
+            className='hover:border-2 hover:border-indigo-700 rounded-full p-2 hover:-translate-y-2 ease-linear duration-200 hover:text-indigo-700'>
             <MdPhoneIphone />
           </a>
-          <a href='mailto:s_papineau@outlook.com' target='_blank'>
+          <a
+            href='mailto:s_papineau@outlook.com'
+            target='_blank'
+            className='hover:border-2 hover:border-indigo-700 rounded-full p-2 hover:-translate-y-2 ease-linear duration-200 hover:text-indigo-700'>
             <MdEmail />
           </a>
-          <a href='https://www.solo.to/developed.by.paps' target='_blank'>
+          <a
+            href='https://www.solo.to/developed.by.paps'
+            target='_blank'
+            className='hover:border-2 hover:border-indigo-700 rounded-full p-2 hover:-translate-y-2 ease-linear duration-200 hover:text-indigo-700 '>
             <SiLinktree />
           </a>
-          <a href='https://www.linkedin.com/in/shawn-papineau/' target='_blank'>
+          <a
+            href='https://www.linkedin.com/in/shawn-papineau/'
+            target='_blank'
+            className='hover:border-2 hover:border-indigo-700 rounded-full p-2 hover:-translate-y-2 ease-linear duration-200 hover:text-indigo-700'>
             <SiLinkedin />
           </a>
-          <a href='https://www.instagram.com/paps_audio' target='_blank'>
+          <a
+            href='https://www.instagram.com/paps_audio'
+            target='_blank'
+            className='hover:border-2 hover:border-indigo-700 rounded-full p-2 hover:-translate-y-2 ease-linear duration-200 hover:text-indigo-700'>
             <SiInstagram />
           </a>
           <a
-            className='mx-2'
+            className='hover:border-2 hover:border-indigo-700 rounded-full p-2 hover:-translate-y-2 ease-linear duration-200 hover:text-indigo-700'
             href='https://github.com/paps-dot-dev'
             target='_blank'>
             <SiGithub />
@@ -80,7 +94,7 @@ function Home({ dark }) {
           </div>
         </div>
       </div>
-      <ProjectSwiper />
+      <ProjectSwiper projects={projects} />
       <h3 className='font-bold text-6xl lg:text-8xl mt-32'>#FullyStacked</h3>
       <p className='p-4 lg:w-1/3 text-sm font-medium  mt-4 mb-2 rounded-lg m-auto bg-slate-400 bg-opacity-30 text-center '>
         I am strongly knowledgable in a variety of different technologies,
@@ -94,8 +108,8 @@ function Home({ dark }) {
         <p>Contact Me!</p>
         <FaPaperPlane className='inline m-2' />
       </a>
-      <div className='flex flex-col lg:flex-row justify-between m-auto w-4/5 lg:w-10/12'>
-        <div className='grid grid-cols-4 gap-10 text-5xl mt-24 bg-indigo-600 p-8 bg-opacity-30 rounded-lg drop-shadow-lg'>
+      <div className='flex flex-col xl:flex-row justify-between m-auto w-5/6 lg:w-10/12'>
+        <div className='grid grid-cols-4 gap-10 text-5xl mt-24 bg-indigo-600 p-8 bg-opacity-30 rounded-lg drop-shadow-lg min-w-[30%] xl:mx-4'>
           <p className='col-span-4 font-semibold text-2xl text-center'>
             Web Technologies
           </p>
@@ -108,7 +122,7 @@ function Home({ dark }) {
           <FaWordpress />
           <IoLogoVercel />
         </div>
-        <div className='grid grid-cols-4 gap-10 text-5xl mt-24 bg-blue-600 p-8 bg-opacity-30 rounded-lg drop-shadow-lg'>
+        <div className='grid grid-cols-4 gap-10 text-5xl mt-24 bg-blue-600 p-8 bg-opacity-30 rounded-lg drop-shadow-lg min-w-[30%] xl:mx-4'>
           <p className='col-span-4 text-2xl text-center font-semibold'>
             Data Technologies
           </p>
@@ -117,7 +131,7 @@ function Home({ dark }) {
           <IoLogoFirebase />
           <FaPython />
         </div>
-        <div className='grid grid-cols-4 gap-10 text-5xl mt-24 bg-green-600 p-8 bg-opacity-30 rounded-lg drop-shadow-lg'>
+        <div className='grid grid-cols-4 gap-10 text-5xl mt-24 bg-green-600 p-8 bg-opacity-30 rounded-lg drop-shadow-lg xl:mx-4'>
           <p className='col-span-4 text-2xl text-center font-semibold'>
             Other Technologies
           </p>
