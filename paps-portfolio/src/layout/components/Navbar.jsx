@@ -16,23 +16,14 @@ function Navbar({ toggleTheme, dark }) {
   }
   return (
     <header className='min-h-[100px]'>
-      <nav className='flex flex-row justify-between items-center '>
+      <nav className='flex flex-row justify-between items-center p-8 '>
         <FaReact
           onClick={toggleNav}
           className={`${
-            dark ? 'text-white' : 'text-indigo-600'
+            dark ? 'text-white' : 'text-gray-600'
           } text-[4em] animate-spin-slow cursor-pointer p-2`}
         />
         <div className='flex flex-row justify-between items-center text-3xl'>
-          <a href='https://www.instagram.com/paps_audio' target='_blank'>
-            <FaInstagram />
-          </a>
-          <a
-            className='mx-2'
-            href='https://github.com/paps-dot-dev'
-            target='_blank'>
-            <FaGithub />
-          </a>
           <Switcher dark={dark} toggleTheme={toggleTheme} />
         </div>
       </nav>

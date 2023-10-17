@@ -22,12 +22,16 @@ import {
   FaReact,
   FaVuejs,
   FaWordpress,
+  FaInstagram,
+  FaGithub,
 } from 'react-icons/fa'
 
 import { MdEmail, MdLink, MdPhoneIphone } from 'react-icons/md'
 import { IoLogoVercel, IoLogoFirebase } from 'react-icons/io5'
 import {
   SiDiscord,
+  SiGithub,
+  SiInstagram,
   SiLinkedin,
   SiLinktree,
   SiMicrosoftazure,
@@ -42,7 +46,7 @@ function Home({ dark }) {
       </div>
       <div className='flex flex-col justify-between items-center mt-4'>
         <h1 className='font-semibold text-3xl'>Shawn "Paps" Papineau</h1>
-        <div className='text-3xl flex justify-between items-center w-[220px] p-4'>
+        <div className='text-2xl flex justify-between items-center w-[250px] p-4'>
           <a href='tel:586-601-5723'>
             <MdPhoneIphone />
           </a>
@@ -54,6 +58,15 @@ function Home({ dark }) {
           </a>
           <a href='https://www.linkedin.com/in/shawn-papineau/' target='_blank'>
             <SiLinkedin />
+          </a>
+          <a href='https://www.instagram.com/paps_audio' target='_blank'>
+            <SiInstagram />
+          </a>
+          <a
+            className='mx-2'
+            href='https://github.com/paps-dot-dev'
+            target='_blank'>
+            <SiGithub />
           </a>
         </div>
 
@@ -67,6 +80,7 @@ function Home({ dark }) {
           </div>
         </div>
       </div>
+      <h3>Swipe to see more</h3>
       <ProjectSwiper />
       <h3 className='font-bold text-6xl lg:text-8xl mt-32'>#FullyStacked</h3>
       <p className='p-4 lg:w-1/3 text-sm font-medium  mt-4 mb-2 rounded-lg m-auto bg-slate-400 bg-opacity-30 text-center '>
