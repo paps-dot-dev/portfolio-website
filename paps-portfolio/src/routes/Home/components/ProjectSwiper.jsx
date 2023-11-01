@@ -22,13 +22,7 @@ function ProjectSwiper({ projects }) {
           <SwiperSlide
             key={project.id}
             className='bg-gray-500 bg-opacity-40 rounded-xl h-[450px] lg:h-[600px] flex flex-col justify-center items-center'>
-            <ProjectCard
-              image={project.image}
-              id={project.id}
-              name={project.name}
-              github={project.githubURL}
-              technologies={project.technologies}
-            />
+            <ProjectCard project={project} />
           </SwiperSlide>
         ))}
       </Swiper>

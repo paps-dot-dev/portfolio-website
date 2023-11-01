@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import headshot from '../../assets/headshot.jpeg'
 import ProjectSwiper from './components/ProjectSwiper'
 import {
@@ -59,7 +59,7 @@ function Home({ dark, projects }) {
             <MdEmail />
           </a>
           <a
-            href='https://www.solo.to/developed.by.paps'
+            href='https://solo.to/shawn.paps'
             target='_blank'
             className='hover:border-2 hover:border-indigo-700 rounded-full p-2 hover:-translate-y-2 ease-linear duration-200 hover:text-indigo-700 '>
             <SiLinktree />
@@ -71,7 +71,7 @@ function Home({ dark, projects }) {
             <SiLinkedin />
           </a>
           <a
-            href='https://www.instagram.com/paps_audio'
+            href='https://www.instagram.com/shawn.paps'
             target='_blank'
             className='hover:border-2 hover:border-indigo-700 rounded-full p-2 hover:-translate-y-2 ease-linear duration-200 hover:text-indigo-700'>
             <SiInstagram />
@@ -89,7 +89,8 @@ function Home({ dark, projects }) {
             className={`${
               dark ? 'from-blue-400 to-white' : 'from-gray-800 to-indigo-600'
             } text-[2em] text-center bg-gradient-to-br text-transparent bg-clip-text font-light`}>
-            <p>I am a Web Developer and UI/UX Designer.</p>
+            <p>I am a Web Developer and UI Designer.</p>
+
             <p className='font-semibold'>Creatively innovating with code.</p>
           </div>
         </div>

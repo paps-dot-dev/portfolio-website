@@ -13,6 +13,7 @@ const projects = [
       'Headless UI',
       'Google Forms',
     ],
+    thumbnail: '/nobleVideo.mov',
   },
   {
     id: 2,
@@ -36,7 +37,7 @@ const projects = [
     id: 4,
     name: 'Enterprise Link Tree Application',
     url: '',
-    githubURL: 'https://github.com/paps-dot-dev/pricing-by-postal-code',
+    githubURL: 'https://github.com/paps-dot-dev/adr-tech-hub',
     image: '/project.jpg',
     summary: 'Interesting information about this project',
     technologies: ['Next.js', 'Tailwind', 'Node.js'],
